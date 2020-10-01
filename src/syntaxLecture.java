@@ -87,9 +87,6 @@ public class syntaxLecture {
         //System.out.printf("Wow \"%s\" is a great quote.\n", quote);
 
 
-
-
-
         // ================== Exercises ==================
         //Pi exercise
         double pi = 3.14159;
@@ -130,5 +127,8 @@ public class syntaxLecture {
         System.out.printf("L:%s x W:%s x H:%s\n", length, width, height);
         System.out.printf("The area of the classroom is: %s\n", area);
         System.out.printf("The volume of the classroom is: %s", volume);
+
+        //Misc
+
     }
 }
