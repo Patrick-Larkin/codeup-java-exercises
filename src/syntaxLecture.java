@@ -117,9 +117,9 @@ public class syntaxLecture {
         //Classroom
         //Todo:final bonus causes syntax error
         System.out.print("Enter length of classroom at Codeup\n");
-        double length = Integer.parseDouble(sc.nextLine());
+        double length = Integer.parseInt(sc.nextLine());
         System.out.print("Enter width of a classroom at Codeup\n");
-        double width = Integer.parseFloat(sc.nextLine());
+        double width = Integer.parseInt(sc.nextLine());
         System.out.print("Enter height of a classroom at Codeup\n");
         double height = Integer.parseInt(sc.nextLine());
         double area = length * width;
