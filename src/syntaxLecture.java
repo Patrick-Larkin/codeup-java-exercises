@@ -22,8 +22,7 @@ public class syntaxLecture {
         //SomeObject = new SomeObject();
 
         // ================== DATA TYPES ==================
-
-//        int primitiveExample = 3;
+        //int primitiveExample = 3;
 
         //Student referenceExample = new Student();
         // use the smallest type needed for the job
@@ -127,8 +126,5 @@ public class syntaxLecture {
         System.out.printf("L:%s x W:%s x H:%s\n", length, width, height);
         System.out.printf("The area of the classroom is: %s\n", area);
         System.out.printf("The volume of the classroom is: %s", volume);
-
-        //Misc
-
     }
 }
