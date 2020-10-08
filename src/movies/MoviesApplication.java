@@ -4,10 +4,8 @@ import util.Input;
 
 //Todo 4: Create a class named MoviesApplication that has a main method.
 public class MoviesApplication {
-  Movie [] movies = MoviesArray.findAll();
-
   public static void main(String[] args) {
-
+    Movie[] movies = MoviesArray.findAll();
     Input input = new Input();
 
     //Todo 5: Give the user a list of options for viewing all the movies or viewing movies by category.
@@ -29,7 +27,7 @@ public class MoviesApplication {
         case 2:
           System.out.println("view all movies in the animated category");
           if (movie.getCategory().equalsIgnoreCase("animated")) {
-            for (Movie movie: movies) {
+            for (Movie movie : movies) {
               System.out.println(movie.getName() + " -- " + movie.getCategory());
             }
           }
@@ -37,7 +35,7 @@ public class MoviesApplication {
         case 3:
           System.out.println("view all movies in the animated category");
           if (movie.getCategory().equalsIgnoreCase("animated")) {
-            for (Movie movie: movies) {
+            for (Movie movie : movies) {
               System.out.println(movie.getName() + " -- " + movie.getCategory());
             }
           }
@@ -45,22 +43,29 @@ public class MoviesApplication {
         case 4:
           System.out.println("view all movies in the animated category");
           if (movie.getCategory().equalsIgnoreCase("animated")) {
-            for (Movie movie: movies) {
+            for (Movie movie : movies) {
               System.out.println(movie.getName() + " -- " + movie.getCategory());
             }
           }
           break;
         case 5:
-          System.out.println("view all movies in the animated category");
-          if (movie.getCategory().equalsIgnoreCase("animated")) {
-            for (Movie movie: movies) {
-              System.out.println(movie.getName() + " -- " + movie.getCategory());
-            }
-          }
+          printMoviesByCategory("sci-fi");
           break;
         default:
           System.out.println("Hi");
       }
     } while (listSettings != 0);
+  }
+
+
+  public static void printMoviesByCategory(String category) {
+    System.out.println("view all movies in the "++animated++" category");
+    for (Movie movie : movies) {
+      if (movie.getCategory().equalsIgnoreCase("animated")) {
+        for (Movie movie : movies) {
+          System.out.println(movie.getName() + " -- " + movie.getCategory());
+        }
+      }
+    }
   }
 }
