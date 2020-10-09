@@ -1,25 +1,18 @@
 package shapes;
-//Todo 5: Create a class named Square that extends Rectangle.
-public class Square extends Rectangle {
+//Todo 5: Create a class named Square that extends Quad.
+public class Square extends Quadrilateral {
+  public Square(side) {
+    super(side);
+    this.length = side;
+    this.width = side;
+  }
+  @Override
+  public double setLength() {
+    return 0;
+  }
 
-  //Todo 7: Calls the parent's constructor to set both the length and width to the value of side
-  public Square(double side) {
-    super(side, side);
+  @Override
+  public double setWidth() {
+    return 0;
   }
 }
-
-
-
-
-
-
-//  public double Square(double side) {
-//    return super.getPerimeter(side, side);
-//  }
-//}
-////
-////class Square extends Rectangle {
-////  public Square(double side) {
-////    super();
-////  }
-////}
