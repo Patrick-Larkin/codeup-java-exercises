@@ -7,7 +7,6 @@ public class Student {
   private String name;
   private ArrayList<Integer> grades; //Todo: The grades property should be an ArrayList of integers. ArrayList<Integer> grades = new ArrayList<>()
 
-
   public Student(String aName) {
     this.name = aName;
     this.grades = new ArrayList<>(); //initializes the grades property as an empty ArrayList.
@@ -17,10 +16,12 @@ public class Student {
   public String getName() {
     return name;
   }
+
   // adds the given grade to the grades property
   public void addGrade(int grade) {
     grades.add(grade);
   }
+
   // returns the average of the students grades
   public double getGradeAverage() {
     double sum = 0;
