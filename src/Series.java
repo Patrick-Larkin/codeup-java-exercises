@@ -1,0 +1,4 @@
+interface Series {
+  int getNext();
+}
+

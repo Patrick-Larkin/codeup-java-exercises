@@ -1,31 +1,22 @@
 package shapes;
-//Todo 1: Change your existing Rectangle class to inherit from Quadrilateral and implement Measurable.
-public class Rectangle extends Quadrilateral { // implement Measurable causes error
-  //Todo 3: Should define a constructor that accepts two numbers for length and width
-  public Rectangle(double aLength, double aWidth) {
-    this.length = aLength;
-    this.width = aWidth;
+//Todo 1: create a class named Rectangle.
+public class Rectangle {
+  //Todo 2: protected properties for both length and width
+  protected double length;
+  protected double width;
+
+  //Todo 3: define a constructor that accepts two numbers for length and width, and sets those properties.
+  public Rectangle(double length, double width) {
+    this.length = length;
+    this.width = width;
   }
-  @Override
-  public double setLength() {
-    return 0;
+  //Todo 4: Create two methods on the Rectangle class, getArea and getPerimeter that return the respective values.
+  public double getArea(double length, double width) {
+    return length * width;
   }
 
-  @Override
-  public double setWidth() {
-    return 0;
+  public double getPerimeter(double length, double width) {
+    return (2 * length) + (2 * width);
   }
 }
-
-  //
-//  //Todo 4.a:Methods getPerimeter that return the respective values.
-//  public double getPerimeter() {
-//    return (2 * this.length) + (2 * this.width);
-//  }
-//  //Todo 4.b:Methods getArea that return the respective values.
-//  public double getArea() {
-//    return this.length * this.width;
-//  }
-//}
-
 
