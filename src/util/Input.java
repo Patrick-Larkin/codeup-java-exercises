@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Input {
   private Scanner scanner;
+  private int num;
   //============Input============
   public Input(){
     this.scanner = new Scanner(System.in);
@@ -28,18 +29,25 @@ public class Input {
             input.trim().toLowerCase().equals("yes"));
   }
 
+
+
   //============Get Int============
   public int getInt(int min,int max){
 
     return getInt(min,max,"Please enter an integer between "+min+" and "+max);
 
   }
-  public int getInt(int min,int max,String prompt){
+  public int getInt(int min,int max,String prompt) {
     while (true) {
       System.out.println(prompt);
-
       String input = scanner.nextLine();
-      int num = Integer.parseInt(input);
+      int num = 0;
+      try {
+        num = Integer.parseInt(input);
+      } catch (NumberFormatException NFExc) {
+        System.err.println("Not a valid integer");
+        getInt(min, max, prompt);
+      }
       if (num >= min && num <= max)
         return num;
     }
@@ -48,12 +56,19 @@ public class Input {
   public int getInt(){
     return getInt("Please enter an integer");
   }
-  public int getInt(String prompt){
-    System.out.println(prompt);
-    String input = scanner.nextLine();
-    int num = Integer.parseInt(input);
-    return num;
+
+  public int getInt(String prompt) {
+    String stringInteger = getString("Enter an Valid Integer");
+    int aInteger;
+    try {
+      aInteger = Integer.parseInt(stringInteger);
+    } catch (NumberFormatException NFExc) {
+      System.err.println("Not a valid integer");
+      return getInt(prompt);
+    }
+    return aInteger;
   }
+
 
   //============Get Double============
   public double getDouble(double min,double max){
@@ -67,10 +82,27 @@ public class Input {
     }
   }
 
-  public double getDouble(){
-    System.out.println("Please enter a number");
-    String input = scanner.nextLine();
-    return Double.parseDouble(input);
+  public int getDouble(){
+    return getInt("Please enter an Double");
   }
+
+  public double getDouble(String prompt) {
+    String stringDouble = getString("Enter an Valid Double");
+    int aDouble;
+    try {
+      aDouble = Integer.parseInt(stringDouble);
+    } catch (NumberFormatException NFExc) {
+      System.err.println("Not a valid Double");
+      return getDouble(prompt);
+    }
+    return aDouble;
+  }
+
+
+//  public static void getBinary() {
+//    Input input = new Input();
+//    try {
+//      String stringHex = input.getString("Enter an Valid Double");
+
 }
 //Todo:Butchered lecture and exercises recover material
