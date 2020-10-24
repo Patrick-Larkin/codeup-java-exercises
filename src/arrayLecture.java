@@ -44,6 +44,5 @@ public class arrayLecture {
     System.out.println("copyOfNames = " + Arrays.toString(copyOfNames));
 
     //==============Matrix==============
-
   }
 }

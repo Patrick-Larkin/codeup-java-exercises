@@ -45,7 +45,7 @@ public class GradesApplication {
     pat.addGrade(75);
     pat.addGrade(60);
 
-    //Add Keymap (String: "usernames", Object: (aName, grades[]))
+    //Add Keymap (String: "name", Object: (phone, email))
     students.put("plarkin", pat);
     students.put("fergy", fer);
     students.put("slarkin", sean);
