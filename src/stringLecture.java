@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class stringLecture {
+public class StringLecture {
   public static void main(String[] arg) {
     Scanner sc = new Scanner(System.in);
     /* ================== Immutability and Concatenation ==================

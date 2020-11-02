@@ -1,4 +1,4 @@
-public class AnnotationsLec {
+public class AnnotationsLecture {
 /* ================== Annotations ==================
   Annotations are used to provide metadata for Java code. Annotations don't modify the execution of code;
   however, they can be consumed in order to perform additional logic.
@@ -34,7 +34,6 @@ public class AnnotationsLec {
       @Override
       @SuppressWarning
     Run-time annotations.
-
 
 
   @Deprecated

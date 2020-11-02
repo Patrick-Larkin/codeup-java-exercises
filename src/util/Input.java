@@ -30,13 +30,11 @@ public class Input {
   }
 
 
-
   //============Get Int============
   public int getInt(int min,int max){
-
     return getInt(min,max,"Please enter an integer between "+min+" and "+max);
-
   }
+
   public int getInt(int min,int max,String prompt) {
     while (true) {
       System.out.println(prompt);
@@ -97,12 +95,4 @@ public class Input {
     }
     return aDouble;
   }
-
-
-//  public static void getBinary() {
-//    Input input = new Input();
-//    try {
-//      String stringHex = input.getString("Enter an Valid Double");
-
 }
-//Todo:Butchered lecture and exercises recover material

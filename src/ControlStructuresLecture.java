@@ -1,7 +1,7 @@
 import java.util.Scanner;
 //Most of the content of this lesson should be a review, as the concepts are the same as in JavaScript, but you should focus on the parts that are unique to Java.
 
-public class ControlStructuresLec {
+public class ControlStructuresLecture {
   public static void main(String[] args) {
     /* ================== Boolean Expressions ==================
     an expression that evaluates to a boolean value, that is, either true or false

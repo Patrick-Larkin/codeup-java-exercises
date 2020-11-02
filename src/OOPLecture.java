@@ -1,5 +1,5 @@
 //Todo: Notes are trash redo and study
-public class oopLecture {
+public class OOPLecture {
     public static void main(String[] args) {
 /*================================= OOP ================================
 Object-oriented programming  --  A way to organize code, especially for larger/more complex programs.
@@ -136,8 +136,28 @@ We said that fields can belong either to a class or an object. Means that each o
         public sayHello() {
             return String.format("%s says hello!", this.name);
         }
-*/
 
+================================= Visibility ================================
+    Visibility refers to how a class or instance field is allowed to be accessed.
+    It allows us to encapsulate the data in our classes; that is, only expose what is necessary to other classes and objects.
+
+Modifier	          class	    package	    subclass	  project
+public	              y	         y	          y	         y
+
+protected	            y	         y	          y	         n
+
+no modifier           y	         y	          n	         n
+(package private)
+
+private	              y	         n	          n	         n
+
+
+================================= Further Reading ================================
+Object-oriented programming                         https://en.wikipedia.org/wiki/Object-oriented_programming
+Object Oriented Programming Concepts                https://docs.oracle.com/javase/tutorial/java/concepts/index.html
+    What is an Object?                              https://docs.oracle.com/javase/tutorial/java/concepts/object.html
+    What is a Class?                                https://docs.oracle.com/javase/tutorial/java/concepts/class.html
+ */
     }
 }
 

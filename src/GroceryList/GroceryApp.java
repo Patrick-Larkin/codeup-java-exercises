@@ -23,7 +23,6 @@
 //    //    Given an ordered list of grocery categories to choose from, select the category.
 ////    Enter the name of the item.
 ////    Enter how many of the item.
-//
-//
+
 //  }
 //}

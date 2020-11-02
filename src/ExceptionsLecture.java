@@ -1,6 +1,6 @@
 import util.Input;
 
-public class ExceptionsLec {
+public class ExceptionsLecture {
 	public static void main(String[] args) throws Exception {
 		Input input = new Input();
 		/* ================== Throwing Exceptions ==================

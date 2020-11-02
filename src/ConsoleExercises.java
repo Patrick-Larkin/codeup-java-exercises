@@ -39,15 +39,13 @@ public class ConsoleExercises {
              System.out.printf("Word A: %s\n Word B: %s\n Word C: %s\n", wordA, wordB, wordC);
 
 
-        //Sentence
-            //Todo: Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
+        /*Sentence - Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.*/
               System.out.println("\nEnter a sentence");
               Scanner sentence = new Scanner(System.in);
               String quote = sentence.nextLine();
               System.out.printf("Wow \"%s\" is what you wrote.\n", quote);
 
-        //Classroom
-        //Todo:final bonus causes syntax error
+        //Classroom - final bonus causes syntax error
         System.out.print("Enter length of classroom at Codeup\n");
         double length = Integer.parseInt(sc.nextLine());
         System.out.print("Enter width of a classroom at Codeup\n");

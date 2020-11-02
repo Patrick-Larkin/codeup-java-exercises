@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class arrayLecture {
+public class ArrayLecture {
   public static void main(String[] args) {
     //==============Declarations==============
     double[] prices = new double[3];
