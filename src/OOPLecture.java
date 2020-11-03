@@ -1,4 +1,3 @@
-//Todo: Notes are trash redo and study
 public class OOPLecture {
     public static void main(String[] args) {
 /*================================= OOP ================================

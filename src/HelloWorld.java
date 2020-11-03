@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class HelloWorld {
     // ================== Introduction To Java ==================
@@ -19,21 +19,10 @@ public class HelloWorld {
           }
     */
     // ================== Introduction To Java Exercises==================
-    //Todo:Inside your project, right click on the src directory and select 'New -> Java Class'.
-    //Todo:Name this class HelloWorld.
     public static void main(String[] args) {
-        //Todo:Create a program that outputs "Hello, World!" to the console.
+
         System.out.println("Hello, World!");
 
-        //Todo:Try renaming the main method. What happens when you try to run the program?
-         /* Result:
-         /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java -javaagent:/Users/patrick/Desktop/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64403:/Users/patrick/Desktop/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/patrick/IdeaProjects/codeup-java-exercises/out/production/codeup-java-exercises HelloWorld
-          Error: Main method not found in class HelloWorld, please define the main method as:
-          public static void main(String[] args)
-          or a JavaFX application class must extend javafx.application.Application
-         */
-
-        //Todo:System.out.println is used to output information to the console with a newline. System.out.print can be used to output information without a newline. Refactor your code to use two System.out.print statements without changing the output.
         System.out.print("Hello");
         System.out.print("World!");
     }

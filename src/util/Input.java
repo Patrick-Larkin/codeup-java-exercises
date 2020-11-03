@@ -80,12 +80,12 @@ public class Input {
     }
   }
 
-  public int getDouble(){
-    return getInt("Please enter an Double");
+  public double getDouble(){
+    return getDouble("Please enter an Double");
   }
 
   public double getDouble(String prompt) {
-    String stringDouble = getString("Enter an Valid Double");
+    String stringDouble = getString(prompt);
     int aDouble;
     try {
       aDouble = Integer.parseInt(stringDouble);
