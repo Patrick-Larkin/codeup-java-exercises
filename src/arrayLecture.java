@@ -1,5 +1,3 @@
-
-
 public class ArrayLecture {
   public static void main(String[] args) {
     /*==============Declarations==============
@@ -16,12 +14,12 @@ public class ArrayLecture {
 
 
     //The size of the array can be either a literal (like in the example above), a constant, or a variable.
-      //final int NUMBER_OF_BEATLES = 4;
-      //BandMember[] theBeatles = new BandMember[NUMBER_OF_BEATLES];
+    //final int NUMBER_OF_BEATLES = 4;
+    //BandMember[] theBeatles = new BandMember[NUMBER_OF_BEATLES];
 
     //An array's size and and elements can both be defined when it is created with array initializer syntax.*/
-      //String[] beatles = {"John", "Paul", "Ringo"};
-      //System.out.println(beatles.length); // 3
+    //String[] beatles = {"John", "Paul", "Ringo"};
+    //System.out.println(beatles.length); // 3
 
 
     /*==============Iterating==============
@@ -68,34 +66,34 @@ public class ArrayLecture {
       You can think of a two-dimensional array like a grid, with rows and columns.
 
       Let's take a look at an example: */
-        int[][] matrix = {
-          {1, 2, 3},
-          {4, 5, 6},
-          {7, 8, 9}
-        };
+    int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+    };
 
-        // access the first element in the second row
-        System.out.println(matrix[1][0]); // 4
-        // the last element in the first row
-        System.out.println(matrix[0][2]); // 3
-        // the first element in the last row
-        System.out.println(matrix[2][0]); // 7
+    // access the first element in the second row
+    System.out.println(matrix[1][0]); // 4
+    // the last element in the first row
+    System.out.println(matrix[0][2]); // 3
+    // the first element in the last row
+    System.out.println(matrix[2][0]); // 7
 
 
     //We can also iterate over the rows in a matrix, and, within the loop iterating over the rows, iterate over each element in each row with a nested loop:
-      for (int[] row : matrix) {
-        System.out.println("+---+---+---+");
+    for (int[] row : matrix) {
+      System.out.println("+---+---+---+");
 
-        System.out.print("| ");
+      System.out.print("| ");
 
-        for (int n : row) {
-          System.out.print(n + " | ");
-        }
-
-        System.out.println();
+      for (int n : row) {
+        System.out.print(n + " | ");
       }
 
-      System.out.println("+---+---+---+");
+      System.out.println();
+    }
+
+    System.out.println("+---+---+---+");
 
 
     //==============Further Reading==============
@@ -114,9 +112,11 @@ public class ArrayLecture {
 
 
 
-
-
-
+    //    //==============Declarations==============
+//    double[] prices = new double[3];
+//    prices[0] = 1.0;
+//    prices[1] = 2.5;
+//    prices[2] = 8.0;
 //    //==============Names==============
 //    String[] names = {"Patrick", "Doug", "Dan",};
 //
@@ -153,4 +153,3 @@ public class ArrayLecture {
 //    copyOfNames[3] = "Sean";
 //    System.out.println("copyOfNames = " + Arrays.toString(copyOfNames));
 //
-//    //==============Matrix==============

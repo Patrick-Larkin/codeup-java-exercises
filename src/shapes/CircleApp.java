@@ -1,10 +1,8 @@
 package shapes;
-
 import util.Input;
 
 public class CircleApp {
   public static void main(String[] args) {
-    Input input = new Input();
     System.out.println("\n" +
             " __          __  _                            _          __  __            _       _       _____ _                 _____ _                 \n" +
             " \\ \\        / / | |                          | |        |  \\/  |          (_)     ( )     |  __ (_)               / ____| |                \n" +
@@ -34,9 +32,9 @@ public class CircleApp {
 
     int order = correctOrder();
     Circle pizza = new Circle(order);
-    System.out.println("Area of the pizza: " + pizza.getArea());
-    System.out.println("Radius of the pizza: " + pizza.getRadius());
-    System.out.println("Enjoy");
+    System.out.printf("\nArea of the pizza: %.2f in", pizza.getArea());
+    System.out.printf("\nRadius of the pizza: %.2f in", pizza.getRadius());
+    System.out.println("\nEnjoy!");
   }
 
   public static int correctOrder() {
