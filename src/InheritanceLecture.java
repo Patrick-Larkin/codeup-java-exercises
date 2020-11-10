@@ -1,11 +1,4 @@
-package InheritanceAndPolymorphism;
-
-/*Helpful links relating to topics discussed:
-https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
-https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html
- */
-
-public class Lecture {
+public class InheritanceLecture {
   /* ==================================Inheritance====================================
      Can define classes that extend or inherit from another class with the Extends keyword.
      We call these subclasses and the classes that are being inherited from/extend superclasses
@@ -150,15 +143,11 @@ public class Lecture {
       }
     }
 
-
-
     public class Manager extends Employee {
       public String work() {
         return "Managing employees";
       }
     }
-
-
 
     class PolymorphismDemo {
       public void doWork(Employee e) {
@@ -173,7 +162,7 @@ public class Lecture {
         doWork(two); // "Managing employees"
       }
     }
-    Todo: Return b/c failed to understand
+
 
     ==================================The final Keyword====================================
     Can be used to prevent inheritance or overriding. It can also be used with method parameters,
@@ -202,5 +191,13 @@ public class Lecture {
     }
     B/c the work method in the Employee class was declared final,
     it is not allowed to overridden tin the Developer class
+
+   ==================================Further Reading====================================
+			Inheritance       https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
+			Polymorphism      https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html
+
+
+
    */
+
 }

@@ -1,7 +1,75 @@
-//package shapes;
-////Abstract Classes and Interfaces Todo 3.a: Inside of shapes, create an abstract Quadrilateral class that extends Shape and implements Measurable.
-//  abstract class Quadrilateral extends Shape implements Measurable{
-//
+package shapes;
+  abstract class Quadrilateral extends Shape implements Measurable {
+		protected double length;
+		protected double width;
+
+
+	  public Quadrilateral(double length, double width) {
+		  this.length = length;
+		  this.width = width;
+	  }
+
+	  public double getLength() {
+	  	return length;
+	  }
+
+	  public double getWidth() {
+		  return width;
+	  }
+
+	  public void setLength(double length) {
+	  	/*this.length = length;*/
+	  }
+
+	  public void setWidth(double width) {
+		  /*this.width = width*/;
+	  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  //Abstract Classes and Interfaces Todo 3.b: This class should have protected properties:
 //  protected double length;
 //  protected double width;
